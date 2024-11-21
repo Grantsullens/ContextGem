@@ -1,0 +1,6 @@
+<h1>Upload a File</h1>
+<%= form_with url: '/uploads', multipart: true, local: true do |form| %>
+  <%= form.label :file, "Choose a file" %>
+  <%= form.file_field :file %>
+  <%= form.submit "Upload" %>
+<% end %>
